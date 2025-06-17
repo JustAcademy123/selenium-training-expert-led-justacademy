@@ -1,136 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Selenium Hands-On Course in Mumbai | Just Academy</title>
-  <meta name="description" content="Join the best Selenium Hands-On Course in Mumbai. Learn automation testing with real-world practice. Get placement assistance and book a free demo now!">
-  <meta name="keywords" content="Selenium Hands-On Course Mumbai, Selenium Training Mumbai, Automation Testing Course, Selenium Certification Mumbai, Just Academy Selenium">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f9f9f9;
-      color: #222;
-    }
-    header {
-      background: linear-gradient(to right, #4e54c8, #8f94fb);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      animation: fadeInDown 1s ease;
-    }
-    h1 { font-size: 2rem; margin: 0; }
-    nav { text-align: center; margin: 1rem 0; }
-    nav a {
-      margin: 0 10px;
-      color: #4e54c8;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-    nav a:hover { color: #222; }
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-    .modules {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-    }
-    .card {
-      background: white;
-      border-radius: 10px;
-      padding: 1rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-      animation: fadeInUp 0.5s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.7rem 1.5rem;
-      background: #4e54c8;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .btn:hover { background: #3e42a8; }
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 1.5rem 1rem;
-      font-size: 0.9rem;
-    }
-    @keyframes fadeInDown {
-      from {opacity: 0; transform: translateY(-20px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-    @keyframes fadeInUp {
-      from {opacity: 0; transform: translateY(20px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Best Hands-on Selenium Training in Mumbai with Placement Assistance. Learn automation testing from industry experts with practical projects. Book a free demo now!">
+    <meta name="keywords" content="Selenium Training Mumbai, Hands-on Selenium Course, Automation Testing Course, Selenium WebDriver, Java Selenium, Best Selenium Classes, Software Testing Certification, JustAcademy Selenium, Mumbai IT Training">
+    <title>Hands-on Selenium Training in Mumbai | JustAcademy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin: 2rem 0 1rem;
+            font-size: 1.8rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background: var(--secondary);
+            bottom: -8px;
+            left: 0;
+            animation: expand 1.5s ease-in-out infinite alternate;
+        }
+        
+        .highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin: 10px 5px;
+        }
+        
+        .btn:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-accent {
+            background: var(--accent);
+        }
+        
+        .btn-accent:hover {
+            background: #c0392b;
+        }
+        
+        section {
+            padding: 3rem 0;
+            animation: slideUp 1s ease-in-out;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .module {
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--secondary);
+            padding-left: 1rem;
+        }
+        
+        .module h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+        
+        .benefit-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes expand {
+            from { width: 50%; }
+            to { width: 100%; }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .benefits {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-
-<header>
-  <h1>Selenium Hands-On Course in Mumbai</h1>
-  <p>Master Automation Testing with Real Projects – 100% Practical Training</p>
-</header>
-
-<nav>
-  <a href="https://www.justacademy.co/course-detail/selenium-training" target="_blank">Course Details</a>
-  <a href="https://www.justacademy.co/student-placed" target="_blank">Placement</a>
-  <a href="https://www.justacademy.co/" target="_blank">Explore All Courses</a>
-  <a href="https://www.justacademy.co/register-for-course-demo" target="_blank">Contact Us</a>
-</nav>
-
-<section>
-  <h2>Course Modules</h2>
-  <div class="modules">
-    <div class="card">Core Java Essentials</div>
-    <div class="card">Selenium WebDriver Architecture</div>
-    <div class="card">Locators & WebElement Commands</div>
-    <div class="card">TestNG Framework</div>
-    <div class="card">Automation Framework Development</div>
-    <div class="card">Maven & Jenkins Integration</div>
-    <div class="card">Page Object Model (POM)</div>
-    <div class="card">Live Projects & Interview Preparation</div>
-  </div>
-  <a class="btn" href="https://www.justacademy.co/register-for-course-demo" target="_blank">Book a Free Demo</a>
-</section>
-
-<section>
-  <h2>Why Choose Just Academy?</h2>
-  <ul>
-    <li>Hands-On Training with Real Projects</li>
-    <li>Expert Trainers from Industry</li>
-    <li>Resume Building + Interview Preparation</li>
-    <li>Placement Assistance for Mumbai Students</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Student Testimonials</h2>
-  <p>"The hands-on training approach was excellent. I could confidently face interviews after the course!"</p>
-  <p>– Priya M., Placed at TCS</p>
-</section>
-
-<footer>
-  © 2025 Just Academy. All rights reserved. | Mumbai Location | <a href="https://www.justacademy.co/register-for-course-demo" style="color:#8f94fb;">Get in Touch</a>
-</footer>
-
+    <header>
+        <div class="container">
+            <h1><span class="highlight">Hands-on</span> Selenium Training in Mumbai</h1>
+            <p>Master Automation Testing with our industry-driven curriculum and expert instructors</p>
+            <div class="cta-buttons">
+                <a href="https://www.justacademy.co/register-for-course-demo" class="btn btn-accent">Book a Free Demo</a>
+                <a href="https://www.justacademy.co/" class="btn">Explore All Courses</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="container">
+        <div class="card">
+            <h2>About Our <span class="highlight">Hands-on</span> Selenium Course</h2>
+            <p>Our comprehensive Selenium training in Mumbai provides practical, real-world skills in automation testing. Learn from industry experts with extensive experience in Selenium WebDriver, TestNG, and automation frameworks.</p>
+            
+            <div class="benefits">
+                <div class="benefit-item">
+                    <h3>Practical Training</h3>
+                    <p>Hands-on labs with real-world projects to build your portfolio</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from certified professionals with 10+ years experience</p>
+                </div>
+                <div class="benefit-item">
+                    <h3><a href="https://www.justacademy.co/student-placed" style="color:inherit; text-decoration:none;">Placement Assistance</a></h3>
+                    <p>Dedicated support to help you land your dream job</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <div class="card">
+            <h2>Course Modules</h2>
+            
+            <div class="module">
+                <h3>Introduction to Automation Testing</h3>
+                <p>Understanding automation testing concepts and benefits</p>
+            </div>
+            
+            <div class="module">
+                <h3>Selenium WebDriver Fundamentals</h3>
+                <p>Locators, WebElement interactions, synchronization techniques</p>
+            </div>
+            
+            <div class="module">
+                <h3>TestNG Framework</h3>
+                <p>Annotations, assertions, parameterization, parallel execution</p>
+            </div>
+            
+            <div class="module">
+                <h3>Advanced Selenium Concepts</h3>
+                <p>Actions class, JavaScriptExecutor, handling popups and frames</p>
+            </div>
+            
+            <div class="module">
+                <h3>Page Object Model</h3>
+                <p>Design patterns for maintainable test automation</p>
+            </div>
+            
+            <div class="module">
+                <h3>Data-Driven Testing</h3>
+                <p>Excel integration, database testing with Selenium</p>
+            </div>
+            
+            <div class="module">
+                <h3>Continuous Integration</h3>
+                <p>Jenkins integration for automated test execution</p>
+            </div>
+            
+            <div class="module">
+                <h3>Real-world Projects</h3>
+                <p>Hands-on implementation of complete automation frameworks</p>
+            </div>
+            
+            <div class="cta-buttons" style="text-align: center; margin-top: 2rem;">
+                <a href="https://www.justacademy.co/course-detail/selenium-training" class="btn">View Full Curriculum</a>
+                <a href="https://www.justacademy.co/register-for-course-demo" class="btn btn-accent">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <div class="card">
+            <h2>Why Choose Our <span class="highlight">Hands-on</span> Training?</h2>
+            <ul style="list-style-position: inside; margin-left: 1rem;">
+                <li>Industry-relevant curriculum designed by automation experts</li>
+                <li>Practical labs with real-world scenarios</li>
+                <li>Flexible batch timings for working professionals</li>
+                <li>100% practical oriented training approach</li>
+                <li>Interview preparation and resume building sessions</li>
+                <li>Lifetime access to course materials and updates</li>
+            </ul>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 JustAcademy - Best Selenium Training in Mumbai</p>
+            <p>Ready to start your automation testing journey? <a href="https://www.justacademy.co/register-for-course-demo" style="color: white; text-decoration: underline;">Book your free demo session today!</a></p>
+        </div>
+    </footer>
 </body>
 </html>
