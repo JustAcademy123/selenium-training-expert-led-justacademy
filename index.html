@@ -2,108 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="title" content="Expert Led Selenium Training in Mumbai | Just Academy">
-  <meta name="description" content="Join expert led Selenium training in Mumbai by Just Academy. Learn real-world skills from experts.">
-  <meta name="keywords" content="Selenium training in Mumbai, Expert Led Selenium course, Just Academy Selenium, expert led training, most popular Selenium course">
-  <title>Expert Led Selenium Training in Mumbai | Just Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selenium Hands-On Course in Mumbai | Just Academy</title>
+  <meta name="description" content="Join the best Selenium Hands-On Course in Mumbai. Learn automation testing with real-world practice. Get placement assistance and book a free demo now!">
+  <meta name="keywords" content="Selenium Hands-On Course Mumbai, Selenium Training Mumbai, Automation Testing Course, Selenium Certification Mumbai, Just Academy Selenium">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary-color: #8e2de2;
-      --secondary-color: #4a00e0;
-      --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-      --text-dark: #2c003e;
-      --bg-light: #f3f0fa;
-      --card-border: #e0d6f5;
-    }
-    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: white;
-      color: var(--text-dark);
-      line-height: 1.6;
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f9;
+      color: #222;
     }
     header {
-      background: var(--gradient);
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
       color: white;
-      padding: 3rem 1rem;
+      padding: 2rem;
       text-align: center;
+      animation: fadeInDown 1s ease;
     }
-    header h1 { font-size: 2.3rem; margin-bottom: 1rem; }
-    header p { font-size: 1.1rem; max-width: 700px; margin: 0 auto; }
-    .btn {
-      background-color: white;
-      color: var(--primary-color);
-      padding: 0.75rem 1.5rem;
-      border: 2px solid white;
-      border-radius: 6px;
-      cursor: pointer;
-      margin: 1rem 0.5rem;
-      display: inline-block;
+    h1 { font-size: 2rem; margin: 0; }
+    nav { text-align: center; margin: 1rem 0; }
+    nav a {
+      margin: 0 10px;
+      color: #4e54c8;
       text-decoration: none;
-      font-size: 1rem;
-      transition: background 0.3s ease, color 0.3s ease;
+      font-weight: 600;
+      transition: color 0.3s;
     }
-    .btn:hover { background-color: var(--primary-color); color: white; }
-    .section {
-      padding: 3rem 1rem;
-      max-width: 1100px;
+    nav a:hover { color: #222; }
+    section {
+      max-width: 1000px;
       margin: auto;
+      padding: 2rem 1rem;
     }
-    .section h2 {
-      background: var(--gradient);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-align: center;
-      margin-bottom: 2rem;
-      font-size: 1.8rem;
-    }
-    .grid {
+    .modules {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
     }
     .card {
-      background: var(--bg-light);
-      padding: 1.5rem;
-      border-radius: 12px;
-      border: 1px solid var(--card-border);
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: fadeInUp 0.5s ease;
     }
-    footer {
-      background: var(--gradient);
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: #4e54c8;
       color: white;
-      padding: 2rem 1rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover { background: #3e42a8; }
+    footer {
+      background: #222;
+      color: white;
       text-align: center;
+      padding: 1.5rem 1rem;
       font-size: 0.9rem;
+    }
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
 <body>
+
 <header>
-  <h1>Expert Led Selenium Training in Mumbai - Just Academy</h1>
-  <p>Learn from industry professionals at Just Academy through our expert led Selenium training in Mumbai.</p>
-  <a href="https://www.justacademy.co/course-detail/selenium-training" class="btn">Join Selenium Course</a>
-  <a href="https://www.justacademy.co/" class="btn">Visit Just Academy</a>
+  <h1>Selenium Hands-On Course in Mumbai</h1>
+  <p>Master Automation Testing with Real Projects – 100% Practical Training</p>
 </header>
-<section class="section">
-  <h2>Why Join Our Selenium Training?</h2>
-  <div class="grid">
-    <div class="card">
-      <p>Expert Led sessions by professionals in Mumbai</p>
-    </div>
-    <div class="card">
-      <p>Real project exposure during the course</p>
-    </div>
-    <div class="card">
-      <p>Complete guidance and certification</p>
-    </div>
+
+<nav>
+  <a href="https://www.justacademy.co/course-detail/selenium-training" target="_blank">Course Details</a>
+  <a href="https://www.justacademy.co/student-placed" target="_blank">Placement</a>
+  <a href="https://www.justacademy.co/" target="_blank">Explore All Courses</a>
+  <a href="https://www.justacademy.co/register-for-course-demo" target="_blank">Contact Us</a>
+</nav>
+
+<section>
+  <h2>Course Modules</h2>
+  <div class="modules">
+    <div class="card">Core Java Essentials</div>
+    <div class="card">Selenium WebDriver Architecture</div>
+    <div class="card">Locators & WebElement Commands</div>
+    <div class="card">TestNG Framework</div>
+    <div class="card">Automation Framework Development</div>
+    <div class="card">Maven & Jenkins Integration</div>
+    <div class="card">Page Object Model (POM)</div>
+    <div class="card">Live Projects & Interview Preparation</div>
   </div>
+  <a class="btn" href="https://www.justacademy.co/register-for-course-demo" target="_blank">Book a Free Demo</a>
 </section>
+
+<section>
+  <h2>Why Choose Just Academy?</h2>
+  <ul>
+    <li>Hands-On Training with Real Projects</li>
+    <li>Expert Trainers from Industry</li>
+    <li>Resume Building + Interview Preparation</li>
+    <li>Placement Assistance for Mumbai Students</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Student Testimonials</h2>
+  <p>"The hands-on training approach was excellent. I could confidently face interviews after the course!"</p>
+  <p>– Priya M., Placed at TCS</p>
+</section>
+
 <footer>
-  <p><strong>Just Academy</strong> | Expert Led Selenium Training in Mumbai</p>
-  <p>© 2025 Just Academy. All rights reserved. <a href="https://www.justacademy.co/" style="color:white;">www.justacademy.co</a></p>
+  © 2025 Just Academy. All rights reserved. | Mumbai Location | <a href="https://www.justacademy.co/register-for-course-demo" style="color:#8f94fb;">Get in Touch</a>
 </footer>
+
 </body>
 </html>
